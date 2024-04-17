@@ -13,7 +13,7 @@ INSTALL_REQUIRES = [
     pkg for pkg in open('requirements.txt').readlines()
 ]
 
-PYTHON_REQUIRES = '>=3.*'
+PYTHON_REQUIRES = '>=3.5'
 
 class PostDevelopCommand(develop):
     """Post-installation for development mode."""
