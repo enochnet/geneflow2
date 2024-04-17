@@ -3,7 +3,7 @@ name: Build GeneFlow
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
       - main
@@ -40,4 +40,3 @@ jobs:
           pip3 install ./geneflow2
 
 
-          
