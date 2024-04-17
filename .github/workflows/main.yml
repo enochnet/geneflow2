@@ -38,3 +38,6 @@ jobs:
           python3 -m venv gfpy
           source gfpy/bin/activate
           pip3 install ./geneflow2
+
+
+          
