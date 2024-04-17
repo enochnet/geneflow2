@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.*
+        python-version: 3.*.*
 
     - name: Create virtual environment
       run: |
@@ -29,11 +29,11 @@ jobs:
     - name: Clone GeneFlow repository
       run: git clone https://github.com/enochnet/geneflow2
 
-    #- name: Install GeneFlow
-      #run: pip install ./geneflow2
+    - name: Install GeneFlow
+      run: pip install ./geneflow2
 
-#- name: Test installation
-      #run: geneflow --help
+    - name: Test installation
+      run: geneflow --help
 
     - name: Navigate to Docker directory
       run: cd geneflow2/docker
